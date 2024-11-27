@@ -41,7 +41,6 @@ async function list(options = {}) {
     ...productQuery,
     ...statusQuery
   }
-
   const orders = await Order.find(query)
     .sort({ _id: 1 })
     .skip(offset)

@@ -7,7 +7,6 @@ const db = require('./db')
 
 //const productsFile = path.join(__dirname, 'data/full-products.json')
 
-
 const Product = db.model('Product', {
   _id: { type: String, default: cuid },
   description: { type: String },
